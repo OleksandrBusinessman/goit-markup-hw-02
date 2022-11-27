@@ -29,6 +29,9 @@ body {
 .list {
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 
 /* Лого хедер*/
 .logo-web-head {
@@ -97,9 +100,6 @@ body {
   color: var(--white-color);
 }
 /* Контактна інформація футер */
-.contacts-footer .link-address {
-  color: var(--white-color);
-}
 .contacts-footer .link-address:hover,
 .contacts-footer .link-address:focus {
   color: var(--turquoise-color);
@@ -107,10 +107,24 @@ body {
 .contacts-footer .link {
   color: var(--tel-and-mail-footer-col);
 }
+.contacts-footer .link-address {
+  color: var(--white-color);
+}
 .contacts-footer .link:hover,
 .contacts-footer .link:focus {
   color: var(--turquoise-color);
 }
 .foot-bg-color {
   background-color: var(--dark-color);
+}
+/* Кнопки фільтрів */
+.button-fil {
+  color: var(--nav-and-title-color);
+  background-color: var(--section-light-color);
+  border-color: transparent;
+}
+.button-fil:hover,
+.button-fil:focus {
+  color: var(--white-color);
+  background-color: var(--turquoise-color);
 }
