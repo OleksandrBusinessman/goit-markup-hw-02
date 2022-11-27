@@ -11,54 +11,106 @@ rgba(255, 255, 255, 0.6);
 Колір фону наша команда #F5F4FA
 Колір фону футер #2F303A
 */
-:root{
-    --main-text-color: #757575;
-    --main-background-color: #F5F5F5;
-    --turquoise-color: #2196F3;
-    --nav-and-title-color: #212121;
-    --tel-and-mail-footer-col: rgba(255, 255, 255, 0.6);
-    --white-color: #FFFFFF;
-    --black-color: #000000;
-    --dark-color: #2F303A;
-    --section-light-color: #F5F4FA;
+:root {
+  --main-text-color: #757575;
+  --main-background-color: #f5f5f5;
+  --turquoise-color: #2196f3;
+  --nav-and-title-color: #212121;
+  --tel-and-mail-footer-col: rgba(255, 255, 255, 0.6);
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --dark-color: #2f303a;
+  --section-light-color: #f5f4fa;
 }
 body {
-    background-color: var(--main-background-color);
-    color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
 }
-.list {list-style: none;}
+.list {
+  list-style: none;
+}
 
 /* Лого хедер*/
-.logo-web-head {color: var(--turquoise-color);}
-.logo-studio-head {color: var(--black-color);}
+.logo-web-head {
+  color: var(--turquoise-color);
+}
+.logo-studio-head {
+  color: var(--black-color);
+}
 /* Головна навігація */
-.site-nav .link {color: var(--nav-and-title-color);}
-.site-nav .link:hover, .site-nav .link:focus {color: var(--turquoise-color);}
-.site-nav .link.current {color: var(--turquoise-color);}
-.head-bg-color {background-color: var(--white-color);}
+.site-nav .link {
+  color: var(--nav-and-title-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--turquoise-color);
+}
+.site-nav .link.current {
+  color: var(--turquoise-color);
+}
+.head-bg-color {
+  background-color: var(--white-color);
+}
 /* Список контактів хедер */
-.contacts .link {color: var(--main-text-color);}
-.contacts .link:hover, .contacts .link:focus {color: var(--turquoise-color);}
+.contacts .link {
+  color: var(--main-text-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--turquoise-color);
+}
 /* Блок герой */
-.hero-title {color: var(--white-color);}
-.hero {background-color: var(--dark-color);}
+.hero-title {
+  color: var(--white-color);
+}
+.hero {
+  background-color: var(--dark-color);
+}
 /* Кнопка */
-.button {color: var(--white-color); background-color: var(--turquoise-color); border-color: transparent;}
+.button {
+  color: var(--white-color);
+  background-color: var(--turquoise-color);
+  border-color: transparent;
+}
 /* Секції */
-.section-title {color: var(--nav-and-title-color);} 
+.section-title {
+  color: var(--nav-and-title-color);
+}
 /* Наші сильні якості */
-.our-strengths .title {color: var(--nav-and-title-color);}
+.our-strengths .title {
+  color: var(--nav-and-title-color);
+}
 /* Секція чим ми займаємося */
 
 /* Секція Наша команда */
-.section.team {background-color: var(--section-light-color);}
-.our-team .title {color: var(--nav-and-title-color);}
+.section.team {
+  background-color: var(--section-light-color);
+}
+.our-team .title {
+  color: var(--nav-and-title-color);
+}
 /* Лого футер */
-.logo-web-foot {color: var(--turquoise-color);}
-.logo-studio-foot {color: var(--white-color);}
+.logo-web-foot {
+  color: var(--turquoise-color);
+}
+.logo-studio-foot {
+  color: var(--white-color);
+}
 /* Контактна інформація футер */
-.contacts-footer .link-address {color: var(--white-color);}
-.contacts-footer .link-address:hover, .contacts-footer .link-address:focus {color: var(--turquoise-color);}
-.contacts-footer .link {color: var(--tel-and-mail-footer-col);}
-.contacts-footer .link:hover, .contacts-footer .link:focus {color: var(--turquoise-color);}
-.foot-bg-color {background-color: var(--dark-color);}
+.contacts-footer .link-address {
+  color: var(--white-color);
+}
+.contacts-footer .link-address:hover,
+.contacts-footer .link-address:focus {
+  color: var(--turquoise-color);
+}
+.contacts-footer .link {
+  color: var(--tel-and-mail-footer-col);
+}
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
+  color: var(--turquoise-color);
+}
+.foot-bg-color {
+  background-color: var(--dark-color);
+}
