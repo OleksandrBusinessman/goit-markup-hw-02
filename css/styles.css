@@ -11,6 +11,9 @@ rgba(255, 255, 255, 0.6);
 Колір фону наша команда #F5F4FA
 Колір фону футер #2F303A
 */
+/* Які сімейства шпифту:
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
 :root {
   --main-text-color: #757575;
   --main-background-color: #f5f5f5;
@@ -23,14 +26,28 @@ rgba(255, 255, 255, 0.6);
   --section-light-color: #f5f4fa;
 }
 body {
-  background-color: var(--main-background-color);
   color: var(--main-text-color);
+  background-color: var(--main-background-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* Лого хедер*/
@@ -40,9 +57,19 @@ body {
 .logo-studio-head {
   color: var(--black-color);
 }
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
 /* Головна навігація */
 .site-nav .link {
   color: var(--nav-and-title-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -57,6 +84,10 @@ body {
 /* Список контактів хедер */
 .contacts .link {
   color: var(--main-text-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -65,6 +96,12 @@ body {
 /* Блок герой */
 .hero-title {
   color: var(--white-color);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  text-transform: uppercase;
 }
 .hero {
   background-color: var(--dark-color);
@@ -74,14 +111,33 @@ body {
   color: var(--white-color);
   background-color: var(--turquoise-color);
   border-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
 }
 /* Секції */
 .section-title {
   color: var(--nav-and-title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
 }
 /* Наші сильні якості */
 .our-strengths .title {
   color: var(--nav-and-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+.our-strengths p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
 }
 /* Секція чим ми займаємося */
 
@@ -91,6 +147,16 @@ body {
 }
 .our-team .title {
   color: var(--nav-and-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+.our-team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
 }
 /* Лого футер */
 .logo-web-foot {
@@ -106,6 +172,10 @@ body {
 }
 .contacts-footer .link {
   color: var(--tel-and-mail-footer-col);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  font-style: normal;
 }
 .contacts-footer .link-address {
   color: var(--white-color);
@@ -122,9 +192,31 @@ body {
   color: var(--nav-and-title-color);
   background-color: var(--section-light-color);
   border-color: transparent;
+  cursor: pointer;
+  letter-spacing: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
 }
 .button-fil:hover,
 .button-fil:focus {
   color: var(--white-color);
   background-color: var(--turquoise-color);
+}
+/* Приклад наших робіт */
+.list .section-title {
+  letter-spacing: 0.06em;
+}
+.list .sec-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--nav-and-title-color);
+}
+.examples p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
 }
