@@ -50,8 +50,7 @@ body {
   margin: -1px;
 }
 
-/* Лого хедер*/
-.logo-web-head {
+/* .logo-web-head {
   color: var(--turquoise-color);
 }
 .logo-studio-head {
@@ -63,7 +62,7 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
 }
-/* Головна навігація */
+
 .site-nav .link {
   color: var(--nav-and-title-color);
   letter-spacing: 0.02em;
@@ -81,7 +80,7 @@ body {
 .head-bg-color {
   background-color: var(--white-color);
 }
-/* Список контактів хедер */
+
 .contacts .link {
   color: var(--main-text-color);
   letter-spacing: 0.02em;
@@ -93,7 +92,7 @@ body {
 .contacts .link:focus {
   color: var(--turquoise-color);
 }
-/* Блок герой */
+
 .hero-title {
   color: var(--white-color);
   letter-spacing: 0.06em;
@@ -106,7 +105,7 @@ body {
 .hero {
   background-color: var(--dark-color);
 }
-/* Кнопка */
+
 .button {
   color: var(--white-color);
   background-color: var(--turquoise-color);
@@ -118,7 +117,7 @@ body {
   font-size: 16px;
   line-height: calc(30 / 16);
 }
-/* Секції */
+
 .section-title {
   color: var(--nav-and-title-color);
   font-weight: 700;
@@ -126,7 +125,7 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
 }
-/* Наші сильні якості */
+
 .our-strengths .title {
   color: var(--nav-and-title-color);
   font-weight: 700;
@@ -139,9 +138,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
 }
-/* Секція чим ми займаємося */
 
-/* Секція Наша команда */
 .section.team {
   background-color: var(--section-light-color);
 }
@@ -158,14 +155,14 @@ body {
   line-height: 19px;
   text-align: center;
 }
-/* Лого футер */
+
 .logo-web-foot {
   color: var(--turquoise-color);
 }
 .logo-studio-foot {
   color: var(--white-color);
 }
-/* Контактна інформація футер */
+
 .contacts-footer .link-address:hover,
 .contacts-footer .link-address:focus {
   color: var(--turquoise-color);
@@ -187,7 +184,6 @@ body {
 .foot-bg-color {
   background-color: var(--dark-color);
 }
-/* Кнопки фільтрів */
 .button-fil {
   color: var(--nav-and-title-color);
   background-color: var(--section-light-color);
@@ -204,7 +200,7 @@ body {
   color: var(--white-color);
   background-color: var(--turquoise-color);
 }
-/* Приклад наших робіт */
+
 .list .section-title {
   letter-spacing: 0.06em;
 }
@@ -219,4 +215,4 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-}
+} */
