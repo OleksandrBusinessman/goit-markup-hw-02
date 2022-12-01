@@ -16,20 +16,19 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 :root {
   --main-text-color: #757575;
-  --main-background-color: #f5f5f5;
   --turquoise-color: #2196f3;
-  --nav-and-title-color: #212121;
-  --tel-and-mail-footer-col: rgba(255, 255, 255, 0.6);
+  --nav-title-color: #212121;
+  --tel-mail-footer-col: rgba(255, 255, 255, 0.6);
   --white-color: #ffffff;
   --black-color: #000000;
   --dark-color: #2f303a;
   --section-light-color: #f5f4fa;
+  --button-active-color: #188ce8;
 }
 body {
-  color: var(--main-text-color);
-  background-color: var(--main-background-color);
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  background-color: var(--white-color);
 }
 .list {
   list-style: none;
@@ -50,10 +49,11 @@ body {
   margin: -1px;
 }
 
-/* .logo-web-head {
+/* Хедер */
+.nav .logo-web {
   color: var(--turquoise-color);
 }
-.logo-studio-head {
+.nav .logo-studio {
   color: var(--black-color);
 }
 .logo {
@@ -61,158 +61,159 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
 }
-
 .site-nav .link {
-  color: var(--nav-and-title-color);
-  letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--nav-title-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav .link:hover,
+.nav .link:focus {
   color: var(--turquoise-color);
 }
-.site-nav .link.current {
+.nav .link.current {
   color: var(--turquoise-color);
 }
-.head-bg-color {
-  background-color: var(--white-color);
-}
-
 .contacts .link {
-  color: var(--main-text-color);
-  letter-spacing: 0.02em;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--turquoise-color);
 }
 
-.hero-title {
-  color: var(--white-color);
-  letter-spacing: 0.06em;
+/* Hero */
+.hero .title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+  color: var(--white-color);
 }
 .hero {
   background-color: var(--dark-color);
 }
 
+/* Кнопка */
 .button {
-  color: var(--white-color);
-  background-color: var(--turquoise-color);
-  border-color: transparent;
-  cursor: pointer;
   font-family: inherit;
-  letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  border-color: transparent;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-color);
+  background-color: var(--turquoise-color);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--button-active-color);
 }
 
-.section-title {
-  color: var(--nav-and-title-color);
+/* Фільтри */
+.filtr {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  border-color: transparent;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  color: var(--nav-title-color);
+  background-color: var(--section-light-color);
+}
+.filtr:hover,
+.filtr:focus {
+  color: var(--white-color);
+  background-color: var(--turquoise-color);
+}
+
+/* Секції */
+.section .title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--nav-title-color);
 }
-
-.our-strengths .title {
-  color: var(--nav-and-title-color);
-  font-weight: 700;
+.strengths .title {
   font-size: 14px;
   line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.our-strengths p {
-  font-weight: 400;
+.strengths p {
   font-size: 14px;
+  letter-spacing: 0.03em;
   line-height: calc(24 / 14);
 }
-
-.section.team {
-  background-color: var(--section-light-color);
-}
-.our-team .title {
-  color: var(--nav-and-title-color);
+.team .title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
 }
-.our-team p {
-  font-weight: 400;
+.team p {
   font-size: 16px;
   line-height: 19px;
+  letter-spacing: 0.03em;
   text-align: center;
 }
-
-.logo-web-foot {
-  color: var(--turquoise-color);
-}
-.logo-studio-foot {
-  color: var(--white-color);
-}
-
-.contacts-footer .link-address:hover,
-.contacts-footer .link-address:focus {
-  color: var(--turquoise-color);
-}
-.contacts-footer .link {
-  color: var(--tel-and-mail-footer-col);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  font-style: normal;
-}
-.contacts-footer .link-address {
-  color: var(--white-color);
-}
-.contacts-footer .link:hover,
-.contacts-footer .link:focus {
-  color: var(--turquoise-color);
-}
-.foot-bg-color {
-  background-color: var(--dark-color);
-}
-.button-fil {
-  color: var(--nav-and-title-color);
+.our-team {
   background-color: var(--section-light-color);
-  border-color: transparent;
-  cursor: pointer;
-  letter-spacing: inherit;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
 }
-.button-fil:hover,
-.button-fil:focus {
-  color: var(--white-color);
-  background-color: var(--turquoise-color);
-}
-
-.list .section-title {
-  letter-spacing: 0.06em;
-}
-.list .sec-title {
-  font-weight: 700;
+.examples .title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: var(--nav-and-title-color);
 }
 .examples p {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-} */
+  letter-spacing: 0.03em;
+}
+.bg-white {
+  background-color: var(--white-color);
+}
+/* footer */
+.footer .logo-web {
+  color: var(--turquoise-color);
+}
+.footer .logo-studio {
+  color: var(--white-color);
+}
+
+.footer .address:hover,
+.footer .address:focus {
+  color: var(--turquoise-color);
+}
+.contacts-ft .link {
+  color: var(--tel-mail-footer-col);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+.contacts-ft .address {
+  color: var(--white-color);
+}
+.contacts-ft .link:hover,
+.contacts-ft .link:focus {
+  color: var(--turquoise-color);
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
