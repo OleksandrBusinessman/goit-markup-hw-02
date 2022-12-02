@@ -156,8 +156,8 @@ body {
 }
 .strengths p {
   font-size: 14px;
-  letter-spacing: 0.03em;
   line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 .team .title {
   font-weight: 500;
@@ -193,11 +193,6 @@ body {
 }
 .footer .logo-studio {
   color: var(--white-color);
-}
-
-.footer .address:hover,
-.footer .address:focus {
-  color: var(--turquoise-color);
 }
 .contacts-ft .link {
   color: var(--tel-mail-footer-col);
